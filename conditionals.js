@@ -8,7 +8,7 @@ If students get 70 or above: console log C
 If students get 55 or above: console log D
 Any grade lower than 55 is F */
 
-let grade = Math.floor(Math.random()*101);
+/* let grade = Math.floor(Math.random()*101);
 console.log('Your grade is ' + grade);
 
 if (grade >= 90) {
@@ -45,4 +45,15 @@ switch (true) {
 	// Anything 55 or below is failing
  	default:
         console.log('F');
+}*/
+
+let age = Math.floor(Math.random() * 22)
+console.log(`Age: ` + age)
+
+if(age >= 18){
+	console.log(`Older than 18`)
+}else if(age < 18){
+	console.log(`Younger than 18`)
+}else if (age >= 21){
+	console.log(`Adult`)
 }
