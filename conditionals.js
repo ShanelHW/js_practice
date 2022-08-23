@@ -8,7 +8,8 @@ If students get 70 or above: console log C
 If students get 55 or above: console log D
 Any grade lower than 55 is F */
 
-let grade = 89.5;
+let grade = Math.floor(Math.random()*101);
+console.log('Your grade is ' + grade);
 
 if (grade >= 90) {
   console.log("A");
@@ -23,7 +24,7 @@ else if (grade < 90 && grade >= 80) {
   console.log("F");
 } 
 
-
+console.log('Even with extra credit your grade is still ' + grade + ` So it's `)
 switch (true) {
 	// If score is 90 or greater
 	case grade >= 90:
