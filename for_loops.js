@@ -1,11 +1,15 @@
-// for (let i = 0; i <= 10; i++) {
+// for (let i = 0; i <= 10; i+=2){
+//         console.log(i)  
+//     }for (let i = 0; i <= 10; i+=1) {
+// 	        console.log(i)
 // }
 
-// for (let index = 10 ; index >= 0; index--) {
-//     if (index % 2 === 0){
-//         console.log(index)
-//         }
-// }
+
+for (let index = 10 ; index >= 0; index--) {
+    if (index % 2 === 0){
+        console.log(index)
+        }
+}
 
 // for (let index = 6; index <= 60; index ++) {
 //         if (index % 3 == 0){
