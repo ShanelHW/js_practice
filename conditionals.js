@@ -47,7 +47,7 @@ switch (true) {
         console.log('F');
 }*/
 
-let age = Math.floor(Math.random() * 22)
+/*let age = Math.floor(Math.random() * 22)
 console.log(`Age: ` + age)
 
 if(age >= 18){
@@ -56,4 +56,28 @@ if(age >= 18){
 	console.log(`Younger than 18`)
 }else if (age >= 21){
 	console.log(`Adult`)
-}
+}*/
+
+let num = Math.floor(Math.random() * 101);
+
+   
+    if (num > 0) {
+      console.log(num + ` is positive.`);
+    } else if (num == 0){
+		console.log(num + ` not positive or negative.`);
+	}else {
+		console.log(num + ` is negative.`)
+	}
+
+    /*Test 
+	num = Math.floor(Math.random() * 101);
+    console.log(num);
+	*/
+
+	if (num > 100 ) {
+		console.log(num + ` is positive and greater than 100.`);
+	  } else if (num == 0){
+		  console.log(num + ` not positive or negative.`);
+	  }else {
+		  console.log(num + ` is negative.`)
+	  }
