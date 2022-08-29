@@ -4,7 +4,7 @@ let count =2
 while (count<8) {
     console.log(count)
     count+= 2
-    
+    \courses\1123\assignments
 }
 
 
