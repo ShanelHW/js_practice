@@ -7,7 +7,7 @@
 //   // expected output: The area of  rectangle with a width of 2 and a height of 4 is 8 square units
 
 // const planetHasWater = function(planet) {
-//     return ((planet == "Earth") || (planet == "Mars"));
+//     return ((planet.toLowerCase() == "Earth") || (planettoLowerCase() == "Mars"));
 //   };
   
 //   console.log(planetHasWater("Earth"));
@@ -18,42 +18,45 @@
 //   // expected output: false
   
 
-function addTwo (n){
-    return n + 2;
-}
-console.log(addTwo(8));
-//expected output: 10
+// function addTwo (n){
+//     return n + 2;
+// }
+// console.log(addTwo(8));
+// //expected output: 10
 
-function addS (x){
-    return x + `s`;
-}
-console.log(addS(`String`));
-//expected output: `Strings`
+// function addS (x){
+//     return x + `s`;
+// }
+// console.log(addS(`String`));
+// //expected output: `Strings`
 
-function sayHello (user){
-    return `Hi ${user}`;
-}
-console.log(sayHello(`Bob`));
-//expected output: `Hi Bob`
+// function sayHello (user){
+//     return `Hi ${user}`;
+// }
+// console.log(sayHello(`Bob`));
+// //expected output: `Hi Bob`
 
-function wereAwesome (name, classmate){
-    return `${classmate} and ${name} are awesome!`;
-}
-console.log(wereAwesome(`Shanel`, `Zoraida`));
-//expected output: `Zoraida and Shanel are awesome!`
+// function wereAwesome (name, classmate){
+//     return `${classmate} and ${name} are awesome!`;
+// }
+// console.log(wereAwesome(`Shanel`, `Zoraida`));
+// //expected output: `Zoraida and Shanel are awesome!`
 
-function isOdd (n){
-    return n%2!==0;
-}
-console.log(isOdd(2));
-//expected output: false
-console.log(isOdd(5));
-//expected output: true
+const weAreAwesome  = (name, classmate) => `${classmate} and ${name} are awesome!`
+console.log(weAreAwesome(`Pattie`, `Olu`));
 
-function reverseString(str) {
-    return ((str.split('')).reverse()).join('')
-}
-console.log(reverseString(`Smack`));
+// function isOdd (n){
+//     return n%2!==0;
+// }
+// console.log(isOdd(2));
+// //expected output: false
+// console.log(isOdd(5));
+// //expected output: true
+
+// function reverseString(str) {
+//     return ((str.split('')).reverse()).join('')
+// }
+// console.log(reverseString(`Smack`));
 
 
 
