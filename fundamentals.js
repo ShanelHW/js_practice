@@ -24,11 +24,9 @@
 // console.log(addTwo(8));
 // //expected output: 10
 
-// function addS (x){
-//     return x + `s`;
-// }
-// console.log(addS(`String`));
-// //expected output: `Strings`
+
+const addS = str => str + `s`
+console.log(addS(`Twinkie`))
 
 // function sayHello (user){
 //     return `Hi ${user}`;
@@ -36,14 +34,10 @@
 // console.log(sayHello(`Bob`));
 // //expected output: `Hi Bob`
 
-// function wereAwesome (name, classmate){
-//     return `${classmate} and ${name} are awesome!`;
-// }
-// console.log(wereAwesome(`Shanel`, `Zoraida`));
-// //expected output: `Zoraida and Shanel are awesome!`
 
 const weAreAwesome  = (name, classmate) => `${classmate} and ${name} are awesome!`
-console.log(weAreAwesome(`Pattie`, `Olu`));
+ console.log(wereAwesome(`Shanel`, `Zoraida`));
+// //expected output: `Zoraida and Shanel are awesome!`
 
 // function isOdd (n){
 //     return n%2!==0;
