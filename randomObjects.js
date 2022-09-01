@@ -217,7 +217,7 @@ const myPlants = [
 
 // Only change code below this line
 
-const secondTree = myPlants[1];
+const secondTree = myPlants[1].list[1];
 console.log(secondTree)
 
 
