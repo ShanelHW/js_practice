@@ -61,7 +61,7 @@ let age = 13;
 
 /* PART II*/
 
-//PART A
+//A
 //Write a loop that will print out all the numbers from 0 to 10, inclusive
 for (let index = 0; index <= 10; index++) {
     console.log(index);
@@ -75,13 +75,30 @@ for (let index = 12; index < 4000; index+=3) {
     console.log(index);   
 }
 
+//B
+for (let index = 0; index <= 100; index++) {
+    (index%2==0) ? console.log(index + `<-- is an even number`) : console.log(index)   
+}
 
+//C
+// for (let index = 0; index <= 100; index++) {
+//     if(index%5==0){
+//         console.log(`I found a ${index}.  High five!`)
+//     } if(index%3==0){
+//         console.log(`I found a ${index}. Three is a crowd.`)   
+//     }
+//         else{
+//             console.log(`I found a ${index}.`)
+//         }
+// }
 
-
-
-
-
-
-//PART B
-
-//PART C
+for (let index = 0; index <= 100; index++) {
+    if(index){
+        console.log(`I found a ${index}.`)
+    } if(index%5==0){
+        console.log(`High five!`)   
+    }
+        else if(index%3==0){
+            console.log(`Three is a crowd.`)
+        }
+}
