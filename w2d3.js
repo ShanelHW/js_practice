@@ -75,9 +75,9 @@
 //Hungry for More
 class BankAccount{
     constructor(){
-    ownerName = ``;
-    balance = 0;
-    acctNum = `123456` + Math.random()*1000; 
+    this.ownerName = `default user`;
+    this.balance = 0;
+    let acctNum = ` `; 
     }
     deposit(amount){
         balance += amount;
@@ -90,16 +90,24 @@ class BankAccount{
         }
     }
     checkBal(){
-        console.log(this.balance);
+        console.log(`Hello ${this.ownerName}. Thank you for being a valued Bank of Shanel customer. Your balance for account ${this.acctNum} is ${this.balance}`);
+    }
+    checkAcctNum(){
+        console.log(this.acctNum);
+    }
+    setOwnerName(name){
+        this.ownerName = name;
     }
 }
 console.log(BankAccount)
 
 class checkingAccount extends BankAccount{
 constructor(){
-super(ownerName, balance, acctNum)
- acctType = 'basic'
+super()
+this.ownerName = `none`;
+this.balance = 0;
 }
+acctNum = `BOS123456` + Math.floor(Math.random()*100000) 
 overdraftEnabled = true;
 withdraw(amount){
     if (balance >= 0) {
@@ -114,9 +122,10 @@ withdraw(amount){
 }
 class savingsAccount extends BankAccount{
     constructor(){
-        super(ownerName, balance, acctNum)
-         acctType = 'interest accruing'
+        super(ownerName, balance)
         }
+        acctNum = `123456` + Math.random()*1000; 
+        overdraftEnabled = false;
         withdraw(amount){
                 console.log(`Unable to process withdrawl for Savings Account ${acctNum}. Please contact your branch`)
             }
@@ -124,7 +133,14 @@ class savingsAccount extends BankAccount{
 
 // class moneyMarketAccount extends BankAccount{
 //     constructor(){
-//         super(ownerName, balance, acctNum)
+//         super(ownerName, balance)
 //          acctType = 'interest accruing'
 //         }
 // }
+
+let myAccount = new checkingAccount();
+console.log(myAccount.acctNum);
+myAccount.setOwnerName(`Jane Doe`);
+console.log(myAccount)
+myAccount.checkBal()
+myAccount.deposit(1)
