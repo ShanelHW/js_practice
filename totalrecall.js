@@ -52,3 +52,12 @@ let animal = `horse`;
 // Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
 (animal == `cow`) ? console.log(`moo`) : console.log(`Hey! You're not a cow.`)
 // Commit
+
+/*PART E*/
+// Make a variable that holds a person's age; be semantic
+let age = 13;
+// Write code that will print out "Here are the keys!", if the age is 16 years or older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+(age >= 16) ? console.log(`Here are the keys!`) : console.log(`Sorry, you're too young.`)
+
+/* PART II*/
+
