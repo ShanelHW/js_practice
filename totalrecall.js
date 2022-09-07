@@ -61,3 +61,27 @@ let age = 13;
 
 /* PART II*/
 
+//PART A
+//Write a loop that will print out all the numbers from 0 to 10, inclusive
+for (let index = 0; index <= 10; index++) {
+    console.log(index);
+}
+// Write a loop that will print out all the numbers from 10 up to and including 400
+for (let index = 10; index <= 400; index++) {
+    console.log(index);
+}
+// Write a loop that will print out every third number starting with 12 and going no higher than 4000
+for (let index = 12; index < 4000; index+=3) {
+    console.log(index);   
+}
+
+
+
+
+
+
+
+
+//PART B
+
+//PART C
