@@ -111,6 +111,12 @@
 // //check balance
 // console.log(`Your account balance is $${bank_account}`);
 
+// let bank_account = 0
+// for (let index = 0; index <= 100; index++) {
+//     bank_account += (index * 2);
+// }
+// console.log(`Your account balance is $${bank_account}`);
+
 // III. Arrays & Control Flow
 
 /*A. Talk About It
@@ -166,37 +172,153 @@ What real-life thing could you model with an array? I would model a library or s
 
 //H. What's in your closet?
 
-const kristynsCloset = [
-    "left shoe",
-    "cowboy boots",
-    "right sock",
-    "GA hoodie",
-    "green pants",
-    "yellow knit hat",
-    "marshmallow peeps"
-  ];
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+//   ];
   
-  // Thom's closet is more complicated. Check out this nested data structure!!
-  const thomsCloset = [
-    [
-      // These are Thom's shirts
-      "grey button-up",
-      "dark grey button-up",
-      "light blue button-up",
-      "blue button-up",
-    ],[
-      // These are Thom's pants
-      "grey jeans",
-      "jeans",
-      "PJs"
-    ],[
-      // Thom's accessories
-      "wool mittens",
-      "wool scarf",
-      "raybans"
-    ]
-  ];
+//   // Thom's closet is more complicated. Check out this nested data structure!!
+//   const thomsCloset = [
+//     [
+//       // These are Thom's shirts
+//       "grey button-up",
+//       "dark grey button-up",
+//       "light blue button-up",
+//       "blue button-up",
+//     ],[
+//       // These are Thom's pants
+//       "grey jeans",
+//       "jeans",
+//       "PJs"
+//     ],[
+//       // Thom's accessories
+//       "wool mittens",
+//       "wool scarf",
+//       "raybans"
+//     ]
+//   ];
 
-console.log(`Kristin is rocking that ${kristynsCloset[3]} today!`);
-kristynsCloset.splice(6,0,'raybans');
-console.log(kristynsCloset);
+// console.log(`Kristin is rocking that ${kristynsCloset[3]} today!`);
+// kristynsCloset.splice(6,0,'raybans');
+// kristynsCloset[5] = "stained knit hat"
+// console.log(kristynsCloset);
+
+// console.log(`Thom is looking fierce in a ${thomsCloset[0][0]}, ${thomsCloset[1][1]} and ${thomsCloset[2][2]}`)
+// thomsCloset[1][3] = `Footie Pajamas`
+// console.log(thomsCloset)
+
+//IV. Functions
+
+//A. printGreeting
+// console.log(`Been there. Done that. No need to interpolate Hello World again.`)
+// //B. printCool
+// let printCool = (name) => `${name} is cool`
+// console.log(printCool(`Shanel`))
+// //C. calculateCube
+// let calculateCube = (num) => Math.pow(num, 3)
+// console.log(calculateCube(3))
+//D. isVowel
+// let isVowel = (letter) => {
+//     letter = letter.toLowerCase();
+//     return (letter == `a` || letter == `e` ||letter == `i` ||letter == `o` || letter == `u`)
+// }
+// console.log(isVowel(`A`))
+// console.log(isVowel(`a`))
+// console.log(isVowel(`E`))
+// console.log(isVowel(`e`))
+// console.log(isVowel(`I`))
+// console.log(isVowel(`i`))
+// console.log(isVowel(`O`))
+// console.log(isVowel(`o`))
+// console.log(isVowel(`U`))
+// console.log(isVowel(`u`))
+// console.log(isVowel(`Z`))
+
+//E. getTwoLengths
+// let getTwoLengths = (str,str2) => [str.length, str2.length]
+// console.log(getTwoLengths("Hank","Hippopopalous"))
+
+//F. getMultipleLengths
+// let getMultipleLengths = (arr) => {
+//     numArr = []
+//     arr.forEach(element => { 
+//         numArr.push(element.length);
+//     });
+//     return numArr;
+// }
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]))
+
+//G. maxOfThree
+// function maxOfThree(n1, n2, n3){
+//     let arr = [n1,n2,n3];
+//     let max = 0;
+//     for(let i = 0; i <= arr.length; i++){
+//         if(arr[i] > max){
+//             max = arr[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(maxOfThree(6, 9, 1));
+
+//H. printLongestWord
+// let printLongestWord = (arr) => {
+// const descending = arr.sort((a,b) =>b.length - a.length);
+// return arr[0]
+// } 
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+
+//V. Objects
+//A Make a user object
+const user = {
+    name: `name`,
+    email: `email`,
+    age: 20,
+    purchased: []
+}
+//B Update the user
+user.email = `newemail@email.com`
+user.age++ ;
+//C Adding keys and values
+user.location = `some other location`
+//D Shopaholic !
+user.purchased.push("carbohydrates")
+user.purchased.push("peace of mind")
+user.purchased.push("Merino jodhpurs")
+console.log(user.purchased[2])
+//E Object-within-object
+user.friend = {
+    name: "Ella Mae",
+    age: 32,
+    location: `London`,
+    purchased: []
+}
+console.log(user.friend.name)
+console.log(user.friend.location)
+user.friend.age = 55
+user.friend.purchased.push(`The One Ring`)
+user.friend.purchased.push(`A latte`)
+console.log(user.friend.purchased[1])
+//F Loops
+user.purchased.forEach(item => {
+    console.log(item)
+});
+//G Functions can operate on objects
+let updateUser = () => {
+    user.age++
+    user.name.toUpperCase()
+    return user;
+} 
+let oldAndLoud = (person) => {
+    person.age = person.age++
+    person.name = person.name.toUpperCase()
+    return person;
+} 
+console.log(updateUser())
+console.log(oldAndLoud(user))
+//VI. Hungry for More
