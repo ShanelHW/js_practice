@@ -275,50 +275,50 @@ What real-life thing could you model with an array? I would model a library or s
 
 //V. Objects
 //A Make a user object
-const user = {
-    name: `name`,
-    email: `email`,
-    age: 20,
-    purchased: []
-}
-//B Update the user
-user.email = `newemail@email.com`
-user.age++ ;
-//C Adding keys and values
-user.location = `some other location`
-//D Shopaholic !
-user.purchased.push("carbohydrates")
-user.purchased.push("peace of mind")
-user.purchased.push("Merino jodhpurs")
-console.log(user.purchased[2])
-//E Object-within-object
-user.friend = {
-    name: "Ella Mae",
-    age: 32,
-    location: `London`,
-    purchased: []
-}
-console.log(user.friend.name)
-console.log(user.friend.location)
-user.friend.age = 55
-user.friend.purchased.push(`The One Ring`)
-user.friend.purchased.push(`A latte`)
-console.log(user.friend.purchased[1])
-//F Loops
-user.purchased.forEach(item => {
-    console.log(item)
-});
+// const user = {
+//     name: `name`,
+//     email: `email`,
+//     age: 20,
+//     purchased: []
+// }
+// //B Update the user
+// user.email = `newemail@email.com`
+// user.age++ ;
+// //C Adding keys and values
+// user.location = `some other location`
+// //D Shopaholic !
+// user.purchased.push("carbohydrates")
+// user.purchased.push("peace of mind")
+// user.purchased.push("Merino jodhpurs")
+// console.log(user.purchased[2])
+// //E Object-within-object
+// user.friend = {
+//     name: "Ella Mae",
+//     age: 32,
+//     location: `London`,
+//     purchased: []
+// }
+// console.log(user.friend.name)
+// console.log(user.friend.location)
+// user.friend.age = 55
+// user.friend.purchased.push(`The One Ring`)
+// user.friend.purchased.push(`A latte`)
+// console.log(user.friend.purchased[1])
+// //F Loops
+// user.purchased.forEach(item => {
+//     console.log(item)
+// });
 //G Functions can operate on objects
-let updateUser = () => {
-    user.age++
-    user.name.toUpperCase()
-    return user;
-} 
-let oldAndLoud = (person) => {
-    person.age = person.age++
-    person.name = person.name.toUpperCase()
-    return person;
-} 
-console.log(updateUser())
-console.log(oldAndLoud(user))
-//VI. Hungry for More
+// let updateUser = () => {
+//     user.age++
+//     user.name.toUpperCase()
+//     return user;
+// } 
+// let oldAndLoud = (person) => {
+//     person.age = person.age++
+//     person.name = person.name.toUpperCase()
+//     return person;
+// } 
+// console.log(updateUser())
+// console.log(oldAndLoud(user))
+// //VI. Hungry for More
