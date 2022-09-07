@@ -128,3 +128,75 @@ What real-life thing could you model with an array? I would model a library or s
 // console.log(`The 1st element is ${randomThings[0]} at index 0`);
 // randomThings[2] = "World";
 // console.log(randomThings);
+
+//D. Change Values
+// const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"];
+// console.log(`The 3rd element is ${ourClass[2]} at index 2`);
+// ourClass[4] = "Octocat";
+// ourClass.push("Cloud City")
+// console.log(ourClass);
+
+//E. Mix It Up
+// const myArray = [5, 10, 500, 20];
+// myArray.push("Aegon");
+// myArray.push("stringy thing");
+// myArray.shift();
+// myArray.unshift("Bob Marley");
+// myArray.pop();
+// myArray.reverse();
+// console.log(`Reverse returns a reference to the same array. This array was mutated as seen below: ${myArray} It does not match the original array`);
+
+//F. Biggie Smalls
+// let num = 4
+// if (num < 100) {
+//     console.log(`little number`)
+// }else (num >= 100) {
+//     console.log(`big number`);
+// } 
+
+//G. Monkey in the Middle
+// let num = 4
+// if (num < 5) {
+//     console.log(`little number`)
+// }else if (num > 10) {
+//     console.log(`big number`);
+// } else {
+//     console.log(`monkey`)
+// }
+
+//H. What's in your closet?
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+console.log(`Kristin is rocking that ${kristynsCloset[3]} today!`);
+kristynsCloset.splice(6,0,'raybans');
+console.log(kristynsCloset);
